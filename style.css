@@ -1,55 +1,61 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #000;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.4;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    background-color: #fff;
+    color: #1a73e8; /* Blue color for 'schropes' header */
+    text-align: left;
+    padding: 10px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 header h2 {
     font-size: 1.2em;
-    margin: 0;
-    font-weight: 300;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #000;
-    border-bottom: 2px solid #000;
+    font-weight: normal;
+    margin-top: 2px;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+main {
+    padding: 10px 20px;
+    max-width: 100%;
+    margin: 0;
 }
 
-li {
+/* Profile Section */
+.profile {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.profile p {
     margin-bottom: 10px;
 }
 
 a {
-    color: #000;
+    color: #1a73e8;
     text-decoration: none;
 }
 
@@ -57,24 +63,53 @@ a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+/* Updates Section */
+.updates h3, .older-updates h3 {
+    font-size: 1em; /* Match the paragraph font size */
+    font-weight: normal; /* Match the paragraph font weight */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-/* Image Styling */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+ul {
+    list-style-type: disc;
+    margin-left: 15px;
 }
 
-.social-links li {
+ul li {
+    margin-bottom: 10px;
+}
+
+/* About Me Section */
+.about h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.contact p {
+    margin-bottom: 5px;
 }
